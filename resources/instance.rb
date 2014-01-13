@@ -15,7 +15,7 @@ attribute :databases,      :kind_of => Fixnum, :default => 16
 attribute :dbfilename,     :kind_of => String#, :default => "#{name}.rdb"
 attribute :dir,            :kind_of => String, :default => "/var/lib/redis"
 attribute :conf_dir,       :kind_of => String, :default => "/etc/redis"
-attribute :bind,           :kind_of => String, :default => "127.0.0.1"
+attribute :bind,           :kind_of => String, :default => nil
 attribute :port,           :kind_of => Fixnum, :default => 6379
 attribute :logfile,        :kind_of => String#, :default => "/var/log/redis/#{name}.log"
 attribute :loglevel,       :kind_of => String, :default => "warning"
